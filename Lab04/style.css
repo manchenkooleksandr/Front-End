@@ -1,0 +1,15 @@
+body {
+  font: 1rem/1.55 system-ui, sans-serif;
+  color: #182f46;
+  background: #eff4f7;
+  margin: 0;
+}
+main { max-inline-size: 58rem; margin-inline: auto; padding: 1.75rem 1rem; }
+figure { margin: 1.4rem 0; }
+img { display: block; inline-size: var(--image-width, 520px); max-inline-size: 100%; block-size: auto; }
+figcaption { padding-block-start: .5rem; }
+.controls { display: flex; flex-wrap: wrap; gap: .45rem; }
+button { font: inherit; min-block-size: 2.6rem; padding-inline: .8rem; }
+[data-ordinal]:focus-visible, button:focus-visible { outline: 3px solid #025277; outline-offset: 3px; }
+.tone-a { background: #204b65; color: white; }
+.tone-b { background: #f6c77a; color: #251b12; }
