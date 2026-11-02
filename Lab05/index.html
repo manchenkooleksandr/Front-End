@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Манченко Олександр Віталійович, ІО-41 — ЛР №5, варіанти 1 і 6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Перевірка форми та події таблиці</h1>
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Реєстраційні дані</h2>
+      <form id="registration" method="post" novalidate aria-labelledby="form-title">
+        <p>Усі поля обов’язкові. Використовуйте демонстраційні дані.</p>
+        <div class="entry"><label for="person">ПІБ</label>
+          <input id="person" name="person" required aria-describedby="person-hint">
+          <small id="person-hint">Наприклад, Савчук М.П.</small></div>
+        <div class="entry"><label for="variant">Варіант</label>
+          <input id="variant" name="variant" inputmode="numeric" required aria-describedby="variant-hint">
+          <small id="variant-hint">Дві цифри, наприклад 01.</small></div>
+        <div class="entry"><label for="group">Група</label>
+          <input id="group" name="group" required aria-describedby="group-hint">
+          <small id="group-hint">Дві літери та дві цифри, наприклад ІО-41.</small></div>
+        <div class="entry"><label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" required aria-describedby="phone-hint">
+          <small id="phone-hint">Формат (044)-000-00-00.</small></div>
+        <div class="entry"><label for="document">ID-card</label>
+          <input id="document" name="document" required aria-describedby="document-hint">
+          <small id="document-hint">Формат АА №000000.</small></div>
+        <button type="submit">Перевірити дані</button>
+        <p id="feedback" role="status"></p>
+      </form>
+    </section>
+    <section aria-labelledby="table-title">
+      <h2 id="table-title">Палітра і таблиця 6 × 6</h2>
+      <label for="color">Колір за кліком</label>
+      <input id="color" type="color" value="#6f43bd">
+      <p>Клітинка 6 реагує на наведення та клік. Подвійний клік фарбує
+        прямокутник від клітинки 6 до нижнього правого кута.</p>
+      <button id="paint-area" type="button">Зафарбувати прямокутник</button>
+      <table><caption>Номери клітинок</caption><tbody id="cells"></tbody></table>
+    </section>
+  </main>
+  <dialog id="result" aria-labelledby="result-title">
+    <h2 id="result-title">Введені дані</h2>
+    <dl id="submitted"></dl>
+    <form method="dialog"><button autofocus>Закрити</button></form>
+  </dialog>
+</body>
+</html>
