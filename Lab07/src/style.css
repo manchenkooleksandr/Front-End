@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f4ee; color: #223426; font: 1rem/1.55 system-ui, sans-serif; }
+main { max-inline-size: 68rem; margin-inline: auto; padding: 1.5rem 1rem; }
+figure { margin: 1.1rem 0; }
+.city { display: block; max-inline-size: 100%; block-size: auto; }
+.toolbar { display: flex; flex-wrap: wrap; gap: .5rem; }
+button { min-block-size: 2.55rem; padding-inline: .8rem; font: inherit; }
+.inline-control { color: inherit; text-align: start; border: 0; background: none; padding-inline: 0; cursor: pointer; }
+.tone-7 { background: #284b39; color: #fff; }
+.tone-8 { background: #f4cd78; color: #291f0f; }
+button:focus-visible, a:focus-visible { outline: 3px solid #3259b0; outline-offset: 3px; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.5rem), 1fr)); gap: 1rem; }
+.product { border: 1px solid #bcc9bc; background: #fff; padding-block-end: .8rem; }
+.product h3, .product p { margin: .55rem .85rem 0; }
+.product img { display: block; inline-size: 100%; block-size: auto; aspect-ratio: 3 / 2; object-fit: cover; }
