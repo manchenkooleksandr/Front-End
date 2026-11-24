@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+  --ink: #1d2541;
+  --indigo: #303c88;
+  --lilac: #e6eaff;
+  --chalk: #f7f8fc;
+  --line: #d6dbee;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-block-start: 1rem; }
+body { margin: 0; color: var(--ink); background: #fff; font: 1rem/1.65 system-ui, sans-serif; }
+h1, h2, h3 { line-height: 1.16; text-wrap: balance; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; }
+h2 { font-size: clamp(1.8rem, 1.3rem + 1.8vw, 2.8rem); margin-block: 0 1.75rem; }
+a { color: var(--indigo); text-underline-offset: .25em; }
+a:focus-visible { outline: .18rem solid #b55408; outline-offset: .25rem; }
+img { display: block; max-inline-size: 100%; object-fit: cover; }
+.shell { inline-size: min(100% - 2rem, 72rem); margin-inline: auto; }
+.skip { position: absolute; inset-inline-start: 1rem; inset-block-start: 1rem; translate: 0 -200%; }
+.skip:focus { translate: 0; background: #fff; padding: .45rem .7rem; }
+.site-header { border-block-end: 1px solid var(--line); }
+.navigation { min-block-size: 4.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .6rem 1.5rem; padding-block: .6rem; }
+.brand { text-decoration: none; display: inline-flex; align-items: center; gap: .65rem; color: var(--ink); font-weight: 760; font-size: 1.14rem; }
+.brand span { display: grid; place-items: center; inline-size: 2.25rem; aspect-ratio: 1; background: var(--indigo); color: #fff; border-radius: 50% 50% .25rem 50%; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.35rem; }
+nav a { color: var(--ink); text-decoration: none; padding-block: .48rem; }
+nav a:hover { text-decoration: underline; }
+
+.hero { display: grid; grid-template-columns: 1fr 1fr; background: var(--lilac); margin-block-start: 1.5rem; align-items: stretch; }
+.hero-copy { padding: clamp(1.35rem, 4vw, 4.5rem); align-self: center; }
+.hero h1 { font-size: clamp(2.15rem, 1.33rem + 3.7vw, 4.55rem); letter-spacing: -.036em; margin-block: 0 1rem; max-inline-size: 11ch; }
+.hero p { max-inline-size: 40ch; margin-block: 0 1.5rem; }
+.hero img { inline-size: 100%; block-size: 100%; aspect-ratio: 4 / 3; }
+.action { display: inline-block; padding: .65rem 1.05rem; background: var(--indigo); color: #fff; text-decoration: none; }
+.action:hover { background: #212e70; }
+
+.block { padding-block: clamp(2.3rem, 6vw, 5.1rem); }
+.grid { display: grid; gap: 1rem; }
+.categories, .courses { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
+.categories { margin: 0; padding: 0; list-style: none; }
+.categories li { border: 1px solid var(--line); border-inline-start: .25rem solid #6c7dbb; padding: 1.1rem; }
+.categories h3, .courses h3, .mentors h3 { font-size: 1.1rem; margin-block: 0 .45rem; }
+.categories p, .courses p, .mentors p { margin: 0; }
+.overview { background: var(--chalk); border-block: 1px solid var(--line); }
+.overview dl { padding-block: 1.35rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+.overview dl div { display: flex; flex-direction: column; gap: .25rem; }
+.overview dd { margin-inline-start: 0; font-weight: 730; font-size: 1.35rem; color: var(--indigo); }
+.courses article { border: 1px solid var(--line); }
+.courses img { inline-size: 100%; block-size: auto; aspect-ratio: 3 / 2; }
+.courses article div { padding: 1rem; }
+.courses .duration { color: var(--indigo); font-weight: 700; margin-block-start: .7rem; }
+.mentor-band { background: #28366e; color: #fff; }
+.mentor-band h2 { margin-block-end: .6rem; }
+.mentor-band .block > p { margin-block: 0 1.65rem; }
+.mentors { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.mentors article { background: #fff; color: var(--ink); padding-block-end: .75rem; }
+.mentors img { inline-size: 100%; block-size: auto; aspect-ratio: 5 / 4; margin-block-end: .65rem; }
+.mentors h3, .mentors p { margin-inline: .8rem; }
+.site-footer { padding-block: 1rem; }
+@media (max-width: 48rem) {
+  .hero { grid-template-columns: 1fr; }
+  .hero h1 { max-inline-size: 18ch; }
+  .hero img { block-size: auto; aspect-ratio: 16 / 9; }
+  .overview dl, .mentors { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
