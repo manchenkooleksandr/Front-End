@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML5, лабораторна робота, КПІ, Київ">
+  <meta name="description" content="Демонстраційна сторінка для лабораторної роботи з HTML5">
+  <title>Манченко Олександр Віталійович, ІО-41 — ЛР №4, варіант 76</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1 id="item-1" data-ordinal="1">Сторінка студента</h1>
+    <h2 id="item-2" data-ordinal="2">Манченко Олександр Віталійович</h2>
+    <p id="item-3" data-ordinal="3">Демонстраційні відомості про народження: 15 травня 2006 року, Київ.</p>
+    <p id="item-4" data-ordinal="4">Демонстраційні відомості про освіту: київський ліцей, КПІ ім. Ігоря Сікорського.
+      Адреса університету: Берестейський проспект, 37, Київ.</p>
+    <h2 id="item-5" data-ordinal="5">Захоплення</h2>
+    <ul>
+      <li id="item-6" data-ordinal="6">Велопрогулянки</li>
+      <li id="item-7" data-ordinal="7">Міська фотографія</li>
+      <li id="item-8" data-ordinal="8">Настільні ігри</li>
+    </ul>
+    <h2>Улюблені фільми</h2>
+    <ol>
+      <li>Інтерстеллар</li>
+      <li>Прибуття</li>
+      <li>Марсіянин</li>
+    </ol>
+    <p>Київ запам’ятовується перепадами висот. Від майдану можна піднятися до
+      Володимирської гірки, щоб побачити Дніпро й лівий берег.</p>
+    <figure>
+      <a id="picture" href="https://kyivcity.gov.ua/">
+        <img src="kyiv.jpg" width="960" height="638"
+             alt="Майдан Незалежності, Київ. Перейти на сайт міста">
+      </a>
+      <figcaption>Майдан Незалежності.
+        <a href="https://commons.wikimedia.org/wiki/File:17-07-02-Maidan_Nezalezhnosti_RR74361.jpg">Фото Ральфа Ролетшека</a>.
+      </figcaption>
+    </figure>
+    <div class="controls" aria-label="Керування фотографією" role="group">
+      <button type="button" data-action="add">Додати</button>
+      <button type="button" data-action="increase">Збільшити</button>
+      <button type="button" data-action="decrease">Зменшити</button>
+      <button type="button" data-action="remove">Видалити</button>
+    </div>
+    <p id="image-status" role="status"></p>
+  </main>
+</body>
+</html>

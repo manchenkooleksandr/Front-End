@@ -1,0 +1,96 @@
+:root {
+  --ink: #1b2942;
+  --paper: #f4f7fb;
+  --line: #c7d1e0;
+  --accent: #214fa2;
+  --highlight: #ffe38a;
+  font-family: system-ui, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.frame {
+  width: min(100% - 2rem, 64rem);
+  margin-inline: auto;
+}
+
+.masthead {
+  padding-block: clamp(2rem, 6vw, 4rem);
+  border-block-end: 0.375rem solid var(--highlight);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 1.25rem + 4vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.masthead p {
+  margin-block: 1rem 0.5rem;
+}
+
+.masthead a {
+  display: inline-block;
+  padding-block: 0.5rem;
+  color: var(--highlight);
+  text-underline-offset: 0.25em;
+}
+
+main {
+  padding-block: 1.5rem 3rem;
+}
+
+h2 {
+  margin-block: 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.labs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  gap: 0.625rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.labs a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  border: 1px solid var(--line);
+  border-radius: 0.375rem;
+  background: white;
+  color: var(--ink);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.labs span {
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.labs a:hover {
+  border-color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}

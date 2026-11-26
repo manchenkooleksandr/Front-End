@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Манченко Олександр Віталійович, ІО-41 — ЛР №2, варіант 6</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    tbody tr:first-child { --paper: #068f8f; --ink: #001719; }
+    tbody tr:nth-child(2) { --paper: #f5f506; --ink: #1c2015; }
+    tbody tr:first-child:hover { --paper: #f5f506; --ink: #1c2015; }
+    tbody tr:nth-child(2):hover { --paper: #068f8f; --ink: #001719; }
+    td { background-color: var(--paper, #fff); color: var(--ink, #14282d); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Таблиця та побудова зображення</h1>
+    <table>
+      <caption>Таблиця варіанта 6</caption>
+      <colgroup><col span="5"></colgroup>
+      <tbody>
+        <tr><td rowspan="2">Манченко</td><td colspan="2">Олександр</td><td>Віталійович</td><td></td></tr>
+        <tr><td rowspan="2">ІО-41</td><td rowspan="2">ЛР №2</td><td rowspan="3">6</td><td></td></tr>
+        <tr><td></td><td rowspan="2"></td></tr>
+        <tr><td colspan="3"></td></tr>
+      </tbody>
+    </table>
+    <section class="copies" aria-label="Дві реалізації рисунка">
+      <figure>
+        <div class="phone phone-position" role="img" aria-label="Телефон із годинником 12:00 і дев’ятьма кнопками">
+          <span class="screen" aria-hidden="true">12:00</span>
+          <span class="keys" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+        <figcaption>Позиціювання</figcaption>
+      </figure>
+      <figure>
+        <div class="phone phone-transform" role="img" aria-label="Телефон із годинником 12:00 і дев’ятьма кнопками">
+          <span class="screen" aria-hidden="true">12:00</span>
+          <span class="keys" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+        <figcaption>Трансформація</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>

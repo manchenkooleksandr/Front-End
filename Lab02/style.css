@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { background: #f2f6f5; color: #14282d; font: 1rem/1.5 system-ui, sans-serif; }
+main { max-inline-size: 54rem; margin-inline: auto; padding: 1rem; }
+table { border-collapse: collapse; table-layout: fixed; inline-size: 100%; }
+caption { text-align: start; margin-block-end: .5rem; }
+col { inline-size: 20%; }
+td { block-size: 2.75rem; border: 1px solid #2b484e; padding: .4rem; overflow-wrap: anywhere; }
+.copies { display: flex; flex-wrap: wrap; gap: 2rem; margin-block-start: 2rem; }
+figure { margin: 0; text-align: center; }
+figcaption { margin-block-start: .55rem; }
+.phone { inline-size: 110px; block-size: 194px; border-radius: 19px; border: 1px solid #232720; background: #dbe7bf; }
+.screen {
+  inline-size: 92px; block-size: 98px; border: 1px solid #232720; border-radius: 15px;
+  background: white; display: grid; place-items: center; font-size: 27px; font-variant-numeric: tabular-nums;
+}
+.keys { inline-size: max-content; display: grid; grid-template-columns: repeat(3, 18px); gap: 7px 9px; }
+.keys i { inline-size: 18px; block-size: 16px; border-radius: 50%; border: 1px solid #211a2b; background: #453554; }
+.phone-position { position: relative; }
+.phone-position .screen { position: absolute; inset: 8px auto auto 8px; }
+.phone-position .keys { position: absolute; inset: 114px auto auto 18px; }
+.phone-transform .screen { transform: translate(8px, 8px); }
+.phone-transform .keys { transform: translate(18px, 16px); }

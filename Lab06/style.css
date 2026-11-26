@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #14343c; background: #eef6f6; font: 1rem/1.55 system-ui, sans-serif; }
+main { max-inline-size: 48rem; margin-inline: auto; padding: 2rem 1rem; }
+button { min-block-size: 2.75rem; padding-inline: 1rem; border: 0; background: #14545e; color: white; font: inherit; }
+button:disabled { opacity: .65; }
+button:focus-visible { outline: 3px solid #2940a4; outline-offset: 3px; }
+#status { min-block-size: 1.5rem; }
+#profile:not([hidden]) { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1rem; padding: 1.2rem; background: white; border-block-start: .3rem solid #14545e; }
+img { display: block; object-fit: cover; aspect-ratio: 1; border-radius: 50%; }
+dl { margin: 0; min-inline-size: 0; overflow-wrap: anywhere; }
+dt { color: #415c60; }
+dd { margin-inline-start: 0; margin-block-end: .6rem; font-weight: 650; }
